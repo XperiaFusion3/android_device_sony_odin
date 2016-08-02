@@ -44,3 +44,19 @@ TARGET_DISPLAY_GAMMA_DISABLED := true
 # TWRP
 TW_THEME := portrait_hdpi
 TW_BRIGHTNESS_PATH := /sys/class/leds/lm3533-lcd-bl-1/brightness
+
+# MultiROM configuration
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := device/sony/odin/multirom/mr_init_devices.c
+MR_DPI := xhdpi
+MR_DPI_FONT := 340
+MR_FSTAB := device/sony/fusion3-common/rootdir/twrp.fstab
+MR_USE_MROM_FSTAB := true
+MR_KEXEC_MEM_MIN := 0x85000000
+MR_DEVICE_VARIANTS := C6502 C6503 C6506
+MR_UNIFIED_TABS := true
+MR_RECOVERY_IN_BOOTIMG := true
+
+# MultiROM build
+DEVICE_RESOLUTION := 1080x1920
+TARGET_RECOVERY_IS_MULTIROM := true
