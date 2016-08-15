@@ -1,1 +1,1 @@
-add_lunch_combo cm_odin-userdebug
+add_lunch_combo hexagon_odin-userdebug
